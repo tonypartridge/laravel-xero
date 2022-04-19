@@ -244,7 +244,7 @@ class Xero
             $data = array_merge($data, $tenantData);
         }
 
-        //cretate a new record or if the user id exists update record
+        // Create a new record or if the user id exists update record
         return XeroToken::updateOrCreate(['id' => 1], $data);
     }
 
